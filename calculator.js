@@ -24,7 +24,7 @@ app.post("/", (req, res) =>{
     res.send(`You are Over weight, your BMI is ${result}`)
   }
   else if(result >= 30){
-    res.send(`You are over weight, your BMI is ${result}`)
+    res.send(`You are Obese, your BMI is ${result}`)
   }
   
 });
