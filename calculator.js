@@ -9,8 +9,8 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 app.post("/", (req, res) =>{
-  let height = Number(req.body.height);
-  let weight = Number(req.body.weight);
+  let height = parseFloat(req.body.height);
+  let weight = parseFloat(req.body.weight);
 
   let result = weight/(height ** 2);
 
